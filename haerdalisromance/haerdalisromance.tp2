@@ -24,7 +24,7 @@ END
 
   // setup.tra contains in game texts as well as installation texts
   // and need to be converted
-  ACTION_DEFINE_ARRAY noconvert BEGIN END
+  ACTION_DEFINE_ARRAY noconvert BEGIN install END
   ACTION_DEFINE_ARRAY reload BEGIN setup END
 
   LAF HANDLE_CHARSETS
@@ -44,6 +44,9 @@ AUTO_TRA ~haerdalisromance/translations/%s~
 LANGUAGE ~English~
          ~English~
          ~haerdalisromance/translations/english/setup.tra~
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~haerdalisromance/translations/schinese/install.tra~
 
 // --------------------------------------------
 // haerdalisromance NPC Mod v2.0
