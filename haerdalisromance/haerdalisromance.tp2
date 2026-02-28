@@ -24,12 +24,13 @@ END
 
   // setup.tra contains in game texts as well as installation texts
   // and need to be converted
-  ACTION_DEFINE_ARRAY noconvert BEGIN install END
-  ACTION_DEFINE_ARRAY reload BEGIN setup END
+  ACTION_DEFINE_ARRAY noconvert BEGIN setup END
+  ACTION_DEFINE_ARRAY reload BEGIN END
 
   LAF HANDLE_CHARSETS
     INT_VAR
       infer_charset = 1
+	  from_utf8 = 1
     STR_VAR
       tra_path = EVAL ~%MOD_FOLDER%/translations~
       // charset_table = charsets // Use HANDLE_CHARSETS built-in rule for charset choice
@@ -46,7 +47,7 @@ LANGUAGE ~English~
          ~haerdalisromance/translations/english/setup.tra~
 LANGUAGE ~Simplified Chinese~
          ~schinese~
-         ~haerdalisromance/translations/schinese/install.tra~
+         ~haerdalisromance/translations/schinese/setup.tra~
 
 // --------------------------------------------
 // haerdalisromance NPC Mod v2.0
